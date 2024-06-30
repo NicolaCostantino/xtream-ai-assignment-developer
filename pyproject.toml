@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "app"
+version = "0.1.0"
+description = "Assignments for the interviews of our AI team"
+authors = ["Nicola Costantino <44480775+NicolaCostantino@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+Django = "^5.0.6"
+pandas = "^2.2.2"
+
+[tool.poetry.group.dev.dependencies]
+django-extensions = "^3.2.3"
+pytest = "^8.2.2"
+pytest-django = "^4.8.0"
+ipykernel = "^6.29.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
