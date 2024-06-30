@@ -1,18 +1,12 @@
 import logging
-import pandas as pd
 
-from .exceptions import (MissingValues,
+from ..exceptions import (MissingValues,
                          ZeroDimensionalStonesFound,
                          NegativePricesFound,)
 
 
 logger = logging.getLogger(__name__)
 
-
-def import_csv_in_dataframe(csv_path: str, logger = logger):
-    dataframe = pd.read_csv(csv_path)
-    logger.info(f"{dataframe.head()}")
-    return dataframe
 
 def run_checks_on_dataframe(dataframe, checks, pass_on_failure=False, logger = logger):
     """
