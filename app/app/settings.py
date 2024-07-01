@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # Apps
     'data_preparation',
+    'model_training',
     # Packages
     'django_extensions',
 ]
