@@ -16,6 +16,7 @@ def normalize_dataframe(dataframe, actions, logger = logger):
         processed_dataframe = dataframe
         for action in actions:
             processed_dataframe = action(processed_dataframe, logger)
+        return processed_dataframe
     except Exception as e:
         # Anything to do here...?
         raise e

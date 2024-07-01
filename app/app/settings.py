@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     # Apps
     'data_preparation',
     'model_training',
+    'pipeline',
     # Packages
     'django_extensions',
 ]

@@ -68,4 +68,11 @@ Observability is key. Save every request and response made to the APIs to a **pr
 ---
 
 ## How to run
-Please fill this section as part of the assignment.
+In the app folder there's a standard [Django](https://www.djangoproject.com/) application. The whole project is managed with [poetry](https://python-poetry.org/).
+Instructions:
+1. Install poetry on your system (follow the most recent instructions on the website)
+2. Install the requirements: `paoetry install` (this will create a local virtual environment)
+3. Move into the `app` folder: `cd app/` (for *nix systems)
+4. Run commands or the whole application with
+    - `poetry run python manage.py runserver` for the server
+    - `poetry run python manage.py <command>` for a specific command, e.g. "execute_pipeline" for the training pipeline
